@@ -8,6 +8,7 @@
     <style>
         #nav {
             display: flex;
+            flex-wrap: wrap;
             background-color: black;
             font-size: 30px;
             position: sticky;
@@ -193,6 +194,11 @@
         }
 
         @media (max-width: 768px) {
+        .about {
+            display: flex;
+            flex-direction: column;
+        }
+
         .box-1, .box-2 {
             flex-direction: column;
             width: 95%;
@@ -247,7 +253,7 @@
     </style>
 </head>
 <body>
-
+    <!--Navigation bar-->
     <div id="nav">
         <div id="btn" class="b1"><a href="#p1">About</a></div>
         <div id="btn" class="b2"><a href="#p2">Education</a></div>
@@ -255,6 +261,7 @@
         <div id="btn" class="b4"><a href="#p4">Contact</a></div>
     </div>
 
+    <!--About page-->
     <div class="page1" id="p1">
         <h1 style="text-align: center;"><span style="background-color: gray; padding: 10px; border-radius: 20px;">About</span></h1>
         <div class="about" >
@@ -268,6 +275,7 @@
         </div>
     </div>
     
+    <!--Education page-->
     <div class="page2" id="p2">
         <h1 style="text-align: center; margin-top: 100px;"><span style="background-color: gray; padding: 10px; border-radius: 20px;">Education</span></h1>
         <div class="edu">
@@ -295,6 +303,7 @@
         </div>
     </div>
 
+    <!--Skills page-->
     <div class="page3" id="p3">
         <h1 style="text-align: center; margin-top: 100px;"><span style="background-color: gray; padding: 10px; border-radius: 20px;">Skills</span></h1>
         <div class="skl">
@@ -327,6 +336,7 @@
         </div>
     </div>
 
+    <!--Contact page-->
     <div class="page4" id="p4">
         <h1 style="text-align: center; margin-top: 100px;"><span style="background-color: gray; padding: 10px; border-radius: 20px;">Contact</span></h1>
         <div class="contact">
