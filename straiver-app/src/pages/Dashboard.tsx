@@ -161,7 +161,7 @@ export default function Dashboard() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Ask something..."
-        className="flex-1 p-2 rounded-md bg-gray-700 text-white outline-none"
+        className="flex-1 p-2 rounded-md bg-gray-700 text-black dark:bg-gray-700 dark:text-white outline-none"
       />
       <button className="send-btn" onClick={handleSend}>
         Send
